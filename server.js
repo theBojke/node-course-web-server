@@ -1,6 +1,8 @@
 const express = require('express');
 const hbs = require('hbs');
 
+//heroku sets PORT environment variable so we are using it instead of 3000 on server
+const port = process.env.PORT || 3000;
 //node modules
 const fs = require('fs');
 
@@ -78,6 +80,6 @@ app.get('/bad', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000');
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
 });
