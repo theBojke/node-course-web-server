@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js" //heroku will try to run npm start script so it must be specified
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
